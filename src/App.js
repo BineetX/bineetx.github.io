@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Landing from "./pages/landing";
+import { useState } from 'react'
+import DetailedPage from "./pages/detailed";
+
+import {useSelector } from 'react-redux'
 
 function App() {
+
+  const selected = useSelector((state) => state.selectionname.name)
+  // const [selected, setSelected] = useState('')
+
+  let selection
+  if (selected === ""){
+    selection = <Landing/>
+  }else if(selected === "details"){
+    selection = <DetailedPage/>
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div  >
+
+        {selection}
+
     </div>
   );
 }
