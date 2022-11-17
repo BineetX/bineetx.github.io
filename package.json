@@ -1,7 +1,7 @@
 {
   "name": "my-webpage",
   "version": "0.1.0",
-  "homepage": "https://bineetx.github.io",
+  "homepage": "https://github.com/BineetX/bineetx.github.io",
   "private": true,
   "dependencies": {
     "@react-three/fiber": "^8.9.1",
