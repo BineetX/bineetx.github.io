@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BineetX/bineetx.github.io/static/css/main.224f38ac.css",
+    "main.js": "/BineetX/bineetx.github.io/static/js/main.7d37d65b.js",
+    "static/js/787.855f30ea.chunk.js": "/BineetX/bineetx.github.io/static/js/787.855f30ea.chunk.js",
+    "static/media/dp.png": "/BineetX/bineetx.github.io/static/media/dp.c8950e9864bba405ea41.png",
+    "index.html": "/BineetX/bineetx.github.io/index.html",
+    "main.224f38ac.css.map": "/BineetX/bineetx.github.io/static/css/main.224f38ac.css.map",
+    "main.7d37d65b.js.map": "/BineetX/bineetx.github.io/static/js/main.7d37d65b.js.map",
+    "787.855f30ea.chunk.js.map": "/BineetX/bineetx.github.io/static/js/787.855f30ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.224f38ac.css",
+    "static/js/main.7d37d65b.js"
+  ]
+}
