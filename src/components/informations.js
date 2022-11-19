@@ -70,8 +70,13 @@ export const bioinformaticsSkills = [
     },
     {
         logo:  <GiDna2 className="text-4xl "/> ,
-        name: "Edgar",
+        name: "edgeR",
         conf: "85%"
+    },
+    {
+        logo:  <GiDna2 className="text-4xl "/> ,
+        name: "STAR",
+        conf: "10%"
     },
 
 ]

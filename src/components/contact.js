@@ -20,7 +20,7 @@ function ContactMe() {
             </div>
             <div>
                 <h1 className='text-2xl font-bold mb-3'>Socials</h1>
-                <div className='flex justify-around py-4 bg-black/30 mx-3 rounded-lg dark:border-b-2 dark:border-purple-600'>
+                <div className='flex justify-around py-4 bg-black/30 mx-3 rounded-lg dark:border-b-2 dark:border-purple-600 flex-wrap px-2'>
                     {socialDetails.map((val,key) => {
                         return(
                             <motion.a animate={{ opacity: 1, scale: 1 }}
