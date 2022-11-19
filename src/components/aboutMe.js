@@ -27,7 +27,7 @@ function AboutMe() {
                 placeItems: "center",
                 placeContent: "center",
                 borderRadius: 30,
-                perspective: 400
+                perspective: 800
             }}
             onMouseMove={handleMouse} className=' dont-bold text-8xl uppercase shadow-2xl hover:shadow-red-500/60 dark:hover:shadow-green-500'>
                 <motion.div className='dark:text-green-500 drop-shadow-lg' style={{

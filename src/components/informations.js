@@ -206,7 +206,7 @@ export const educations = [
     },
     {
         inst : "Central University Of Punjab",
-        time : "2018-2022-",
+        time : "2018-2020",
         degree : "M.Sc",
         subject : "Bioinformatics",
         other: "",

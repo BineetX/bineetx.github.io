@@ -20,7 +20,7 @@ function ContactMe() {
             </div>
             <div>
                 <h1 className='text-2xl font-bold mb-3'>Socials</h1>
-                <div className='flex justify-around py-4 bg-black/30 mx-3 rounded-lg'>
+                <div className='flex justify-around py-4 bg-black/30 mx-3 rounded-lg dark:border-b-2 dark:border-purple-600'>
                     {socialDetails.map((val,key) => {
                         return(
                             <motion.a animate={{ opacity: 1, scale: 1 }}
@@ -32,7 +32,7 @@ function ContactMe() {
                                 stiffness:100,
 
                             }}
-                            initial={{ opacity: 0, scale: 0.1 }} href={val.link} className="flex flex-col items-center hover:text-sky-500">
+                            initial={{ opacity: 0, scale: 0.1 }} href={val.link} className="flex flex-col items-center hover:text-sky-500 dark:hover:text-purple-600">
                                 <div className='text-2xl '>
                                     {val.logo}
                                 </div>
@@ -48,7 +48,7 @@ function ContactMe() {
             </div>
             <div>
                 <h1 className='text-2xl font-bold mb-3'> Academic</h1>
-                <div className='flex justify-around py-4 bg-black/30 mx-3 rounded-lg'>
+                <div className='flex justify-around py-4 bg-black/30 mx-3 rounded-lg dark:border-b-2 dark:border-purple-600'>
                     {academicDetails.map((val,key) => {
                         return(
                             <motion.a href={val.link} animate={{ opacity: 1, scale: 1 }}
@@ -60,7 +60,7 @@ function ContactMe() {
                                 stiffness:100,
 
                             }}
-                            initial={{ opacity: 0, scale: 0.1 }} className="flex flex-col items-center hover:text-sky-500">
+                            initial={{ opacity: 0, scale: 0.1 }} className="flex flex-col items-center hover:text-sky-500 dark:hover:text-purple-600">
                                 <div className='text-2xl '>
                                     {val.logo}
                                 </div>

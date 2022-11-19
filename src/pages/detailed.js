@@ -8,6 +8,7 @@ import Education from "../components/education";
 import {motion} from 'framer-motion'
 import Toggle from "../components/toggle/toggle";
 
+
 function DetailedPage() {
 
     const [selectedView, setSelecetdView] = useState("skill")
@@ -17,6 +18,7 @@ function DetailedPage() {
         setToggled((s) => !s);
     
     }
+    const [navbar, setNavbar] = useState(false);
 
     const [toggled, setToggled] = React.useState(false);
 
@@ -42,13 +44,13 @@ function DetailedPage() {
 
 
     return (
-        <div className="bg-gradient-to-r dark:bg-gradient-to-r from-violet-500 dark:from-black via-pink-500 dark:via-black to-indigo-500 dark:to-black text-white h-full md:h-screen w-screen md:grid md:grid-cols-10 flex flex-col">
+        <div className="bg-gradient-to-r dark:bg-gradient-to-r from-violet-500 dark:from-black via-pink-500 dark:via-black to-indigo-500 dark:to-black text-white lg:min-h-screen  md:min-h-screen w-screen md:grid md:grid-cols-10 flex flex-col">
             <div className="lg:col-start-2 md:col-start-1 lg:col-span-2 md:col-span-3 md:my-8 md:mx-4 md:grid md:grid-rows-6">
                 <div className="row-span-2 bg-black/40 rounded-xl backdrop-blur-sm mb-2 shadow-2xl flex justify-center items-end">
                     <img  src={Logo} className="h-60 " />
 
                 </div>
-                <div className="row-span-4 flex flex-col justify-around backdrop-blur-sm mt-2 rounded-lg bg-black/40 shadow-2xl">
+                <div className="row-span-4 flex flex-col justify-around backdrop-blur-sm mt-2 rounded-lg bg-black/40 shadow-2xl  ">
                     
                     
                     <div className="flex flex-col grow mt-4 mb-2 mx-1 bg-black/20 rounded-lg">

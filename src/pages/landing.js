@@ -15,7 +15,7 @@ function Landing() {
     }
 
     return (
-        <div className="bg-gradient-to-r from-sky-900 via-black to-sky-900 grow h-screen w-screen text-center items-center flex justify-center flex-col">
+        <div className="md:bg-gradient-to-r md:from-sky-900 md:via-black md:to-sky-900 bg-black grow h-screen w-screen text-center items-center flex justify-center flex-col">
             {/* <h1>
                 HI <span className="font-bold text-2xl text-red-800">BINEET</span>, This is going to be your cv . But for now adios.
             </h1>
@@ -24,10 +24,10 @@ function Landing() {
             </p> */}
             <div className="font-bold text-4xl pb-4">
 
-                <img src={Logo} className="h-80" />
+                <img src={Logo} className="md:h-80 h-40" />
             </div>
             <div>
-                <h1 className="font-bold text-gray-300 text-6xl">
+                <h1 className="font-bold text-gray-300 lg:text-6xl md:text-4xl text-3xl px-2">
                     <Typewriter
                         words={["Hii there!!","I am BINEET", "Working as a Ph.D. scholar at ILS", "I do Bioinformatics", "I do Computational Biology","< I love Programming />"]}
                         loop={true}
