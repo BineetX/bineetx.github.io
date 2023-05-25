@@ -15,7 +15,7 @@ function Landing() {
     }
 
     return (
-        <div className="md:bg-gradient-to-r md:from-sky-900 md:via-black md:to-sky-900 bg-black grow h-screen w-screen text-center items-center flex justify-center flex-col">
+        <div className="md:bg-gradient-to-r md:from-sky-900/50 md:via-black md:to-sky-900/50 bg-black grow h-screen w-screen text-center items-center flex justify-center flex-col">
             {/* <h1>
                 HI <span className="font-bold text-2xl text-red-800">BINEET</span>, This is going to be your cv . But for now adios.
             </h1>
