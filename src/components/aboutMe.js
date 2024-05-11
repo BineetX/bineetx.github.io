@@ -12,7 +12,7 @@ function AboutMe() {
             <ComputersCanvas/>
             <div className=' text-md md:text-2xl mx-9'>
                 
-                Currently working as Junior Research Fellow (Ph.D.) under <span className='font-bold text-sky-500'>Dr. Anshuman Dixit</span> at Computational Biology and Bioinfromatics Lab at Institute of Life Sciences Bubaneswar.
+                Currently working as Senior Research Fellow (Ph.D.) under <span className='font-bold text-sky-500'>Dr. Anshuman Dixit</span> at Computational Biology and Bioinfromatics Lab at Institute of Life Sciences Bubaneswar.
                 I am most skilled in: <span className='text-green-400'>Python and Eating Pizza</span>
             </div> 
 
