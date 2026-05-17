@@ -1,5 +1,5 @@
 import React from "react"
-import { educations } from './informations'
+import { achievements, educations } from './informations'
 import { motion } from "framer-motion"
 
 
@@ -35,6 +35,32 @@ function Education() {
                     )
                 })}
             </div>
+            <section className="mx-4 my-8 overflow-hidden rounded-xl border border-purple-500/30 bg-black/30">
+                <div className="flex flex-col gap-1 border-b border-purple-500/30 px-5 py-4 md:flex-row md:items-end md:justify-between">
+                    <div>
+                        <p className="text-sm font-bold uppercase tracking-wider text-purple-300">Achievements</p>
+                        <h2 className="md:text-2xl text-xl font-bold">Awards, qualifications, and scientific events</h2>
+                    </div>
+                    <span className="text-sm text-purple-200">{achievements.length} entries</span>
+                </div>
+                <div className="divide-y divide-purple-500/20">
+                    {achievements.map((item, index) => (
+                        <motion.div
+                            key={`${item.year}-${item.title}`}
+                            className="grid gap-3 px-5 py-4 md:grid-cols-[72px_minmax(0,1fr)_120px] md:items-center"
+                            whileHover={{ x: 6 }}
+                            transition={{ type: "spring", stiffness: 260, damping: 22 }}
+                        >
+                            <span className="font-bold text-purple-300">#{String(index + 1).padStart(2, "0")}</span>
+                            <div>
+                                <h3 className="text-lg font-bold leading-snug">{item.title}</h3>
+                                <p className="mt-1 text-sm text-slate-300">{item.agency}</p>
+                            </div>
+                            <time className="font-bold text-purple-200 md:text-right">{item.year}</time>
+                        </motion.div>
+                    ))}
+                </div>
+            </section>
         </div>
     )
 }
